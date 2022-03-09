@@ -56,7 +56,7 @@ pred_species = [iris.target_names[p] for p in preds]
 print('predicts:', pred_species)
 
 #The trained mode need to be persistant for the future
-from sklearn.externals import joblib
+import joblib
 
 joblib.dump(classifier_knn, 'iris_classifier_knn.joblib')
 
